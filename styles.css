@@ -2,13 +2,20 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     margin: 0%;
+    background-color: rgb(228, 240, 255);
 }
 
 h1 {
     background-color: rgb(123, 138, 238);
     margin-top: 0%;
+    margin: auto;
     padding: 15px;
     color: white;
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 a {
@@ -30,7 +37,8 @@ article {
     margin-right: 5%;
     margin-bottom: 5%;
 }
-article:hover .photo{
+
+article:hover .photo {
     grid-area: "article";
     width: 110%;
     margin-left: 0%;
@@ -54,6 +62,17 @@ article:hover .photo{
     width: 100%;
 }
 
+footer {
+    margin: auto;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(123, 138, 238);
+    margin-top: 0%;
+    color: white;
+    width: 100%;
+}
+
 @media all and (max-width: 1024px) and (orientation: portrait) {
     .gallery {
         margin-left: 2%;
@@ -61,5 +80,32 @@ article:hover .photo{
         display: grid;
         grid-template-columns: 1fr;
 
+    }
+
+    main {
+        margin-top: 80px;
+    }
+
+    article {
+        grid-area: "article";
+        width: 100%;
+        margin: auto;
+    }
+
+    article:hover .photo {
+        width: 80%;
+        margin: auto;
+    }
+
+    .photo {
+        border: solid 4px black;
+        border-radius: 10px;
+        width: 80%;
+        margin: auto;
+    }
+
+    .photo-large {
+        border: solid 4px black;
+        width: 95%;
     }
 }
