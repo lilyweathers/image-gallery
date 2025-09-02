@@ -50,6 +50,7 @@ article {
 }
 
 article:hover .photo {
+    transition: 0.25s;
     grid-area: "article";
     width: 110%;
     margin-left: 0%;
