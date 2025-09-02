@@ -22,6 +22,11 @@ a {
     text-decoration: none;
 }
 
+main {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
 .gallery {
     margin-left: 20%;
     margin-right: 20%;
@@ -74,16 +79,18 @@ footer {
 }
 
 @media all and (max-width: 1024px) and (orientation: portrait) {
+
+    main {
+        margin-top: 120px;
+        margin-bottom: 80px;
+    }
+
     .gallery {
         margin-left: 2%;
         margin-right: 2%;
         display: grid;
         grid-template-columns: 1fr;
 
-    }
-
-    main {
-        margin-top: 80px;
     }
 
     article {
