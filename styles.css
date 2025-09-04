@@ -2,7 +2,6 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     margin: 0;
-    background-color: rgb(228, 240, 255);
     background-image: url("bg-pink.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -65,20 +64,19 @@ main {
 
 article {
     grid-area: "article";
-    margin-left: 5%;
-    margin-top: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
+}
+article .photo {
+    width: 90%;
 }
 
 article:hover .photo {
     transition: 0.25s;
     grid-area: "article";
-    width: 110%;
+    width: 100%;
     margin-left: 0%;
     margin-top: 0%;
     margin-right: 0%;
-    margin-bottom: 4.35%;
+    margin-bottom: 4.3%;
 }
 
 .article-large {
@@ -116,11 +114,7 @@ footer {
     position: fixed;
 }
 footer p {
-    margin: 0%;
-}
-.home-footer {
-    bottom: 0;
-    position: fixed;
+    margin: auto;
 }
 
 @media all and (max-width: 1024px) and (orientation: portrait) {
