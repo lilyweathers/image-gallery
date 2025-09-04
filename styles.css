@@ -1,17 +1,23 @@
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
-    margin: 0%;
+    margin: 0;
     background-color: rgb(228, 240, 255);
+    background-image: url("bg-pink.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.article-bg {
+    width: 100vw;
+    height: 100vh;
 }
 
 h1 {
-    background-color: rgb(123, 138, 238);
     margin-top: 0%;
     margin: auto;
     padding: 15px;
     color: white;
-    position: fixed;
     top: 0;
     justify-content: center;
     align-items: center;
@@ -76,13 +82,16 @@ article:hover .photo {
 
 footer {
     margin: auto;
-    position: fixed;
+    padding: 15px;
     left: 0;
     bottom: 0;
-    background-color: rgb(123, 138, 238);
+    background-color: rgb(255, 163, 190);
     margin-top: 0%;
     color: white;
     width: 100%;
+}
+footer p {
+    margin: 0%;
 }
 
 @media all and (max-width: 1024px) and (orientation: portrait) {
